@@ -7,13 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
-        document.addEventListener("touchmove", function(e) {
+        document.addEventListener("mousemove", function(e) {
             var body = document.querySelector("body");
             var heart = document.createElement("span");
             heart.style.top = e.offsetY + "px";
             heart.style.left = e.offsetX + "px";
-            heart.style.width = Math.random() * 10 + "px";
-            heart.style.height = Math.random() * 10 + "px";
+            heart.style.width = Math.random() * 100 + "px";
+            heart.style.height = Math.random() * 100 + "px";
             body.appendChild(heart);
 
             setTimeout(function() {
@@ -37,20 +37,18 @@
             position: absolute;
             background-image: url(https://img.pngio.com/rotating-heart-on-black-background-motion-background-storyblocks-hearts-with-black-background-png-1920_1080.png);
             pointer-events: none;
-            transform: translate(-5%, -5%);
+            transform: translate(-50%, -50%);
             background-size: cover;
-            
             animation: animate 2s linear infinite;
         }
         
         @keyframes animate {
             0% {
-                transform: translate(-5%, -5%);
+                transform: translate(-50%, -50%);
                 opacity: 1;
-                bottom:0px;
             }
             100% {
-                transform: translate(-5%, -5%);
+                transform: translate(-50%, -50%);
                 opacity: 0;
                 top: 0px;
             }
@@ -59,7 +57,7 @@
 </head>
 
 <body>
-    
+
 </body>
 
 </html>
