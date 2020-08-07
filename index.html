@@ -35,7 +35,7 @@
         
         span {
             position: absolute;
-            background-image: url(https://img.pngio.com/rotating-heart-on-black-background-motion-background-storyblocks-hearts-with-black-background-png-1920_1080.png);
+            background-image: url(heart.png);
             pointer-events: none;
             transform: translate(-50%, -50%);
             background-size: cover;
@@ -46,11 +46,13 @@
             0% {
                 transform: translate(-50%, -50%);
                 opacity: 1;
+                filter: hue-rotate(0deg);
             }
             100% {
                 transform: translate(-50%, -50%);
                 opacity: 0;
                 top: 0px;
+                filter: hue-rotate(720deg);
             }
         }
     </style>
